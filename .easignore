@@ -1,0 +1,42 @@
+# Build artifacts
+android/app/build/
+android/build/
+android/.gradle/
+android/.kotlin/
+.expo/
+node_modules/
+
+# Native project folders (for CNG/Prebuild)
+/android
+/ios
+
+# Documentation and README files
+*.md
+*.sql
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Temporary files
+.DS_Store
+thumbs.db
+*.tmp
+*.temp
+*.log
+
+# Cache directories
+android/app/.cxx/
+.metro-health-check*
+
+# Development files
+.env.local
+.env.development
+*.test.js
+*.spec.js
+__tests__/
+
+# Source maps and debug files
+*.map
+*.debug.js
