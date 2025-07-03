@@ -8,26 +8,39 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "light",
+    "description": "TMS of Emerald Coast - Professional mental health services and TMS therapy. Book consultations, complete assessments, and access comprehensive mental health care.",
     "assetBundlePatterns": [
       "assets/**/*"
     ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.emrald.tms",
+      "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "UIStatusBarStyle": "UIStatusBarStyleLightContent",
-        "UIViewControllerBasedStatusBarAppearance": false
+        "UIViewControllerBasedStatusBarAppearance": false,
+        "NSContactsUsageDescription": "This app needs access to contacts to pre-fill contact information for appointment scheduling.",
+        "NSLocationWhenInUseUsageDescription": "This app uses location to help you find our clinic and provide directions.",
+        "NSPhotoLibraryUsageDescription": "This app may need access to photos to attach documents or images to your forms.",
+        "NSCameraUsageDescription": "This app may need camera access to capture documents or photos for your medical forms."
       }
     },
     "android": {
       "jsEngine": "hermes",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#2c5264"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.emrald.tms"
+      "package": "com.emrald.tms",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
