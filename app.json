@@ -19,11 +19,7 @@
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "UIStatusBarStyle": "UIStatusBarStyleLightContent",
-        "UIViewControllerBasedStatusBarAppearance": false,
-        "NSContactsUsageDescription": "This app needs access to contacts to pre-fill contact information for appointment scheduling.",
-        "NSLocationWhenInUseUsageDescription": "This app uses location to help you find our clinic and provide directions.",
-        "NSPhotoLibraryUsageDescription": "This app may need access to photos to attach documents or images to your forms.",
-        "NSCameraUsageDescription": "This app may need camera access to capture documents or photos for your medical forms."
+        "UIViewControllerBasedStatusBarAppearance": false
       }
     },
     "android": {
@@ -37,9 +33,8 @@
       "package": "com.emrald.tms",
       "permissions": [
         "android.permission.INTERNET",
-        "android.permission.ACCESS_NETWORK_STATE",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
+        "android.permission.ACCESS_NETWORK_STATE"
+     
       ]
     },
     "web": {
