@@ -23,7 +23,7 @@ import * as Haptics from 'expo-haptics';
 
 // Import components
 import AppBar from "../src/components/AppBar";
-import OptimizedMapbox from "../src/components/OptimizedMapbox";
+import OptimizedNativeMap from "../src/components/OptimizedNativeMap";
 import ModernDatePicker from "../src/components/ModernDatePicker";
 import FloatingActionButton from "../src/components/FloatingActionButton";
 import SubmitButton from "../src/components/SubmitButton";
@@ -507,11 +507,11 @@ export default function ContactScreen() {
             />
             </Pressable>
 
-            {/* Optimized Map Section with Caching and Offline Support */}
+            {/* Optimized Map Section with Native Maps (Apple MapKit on iOS, OpenStreetMap on Android) */}
             <View style={styles.mapContainer}>
-              <OptimizedMapbox
+              <OptimizedNativeMap
                 location={OFFICE_LOCATION}
-                initialStyle="satelliteStreets"
+                initialStyle="standard"
                 onPress={openInMaps}
                 onDirectionsPress={openInMaps}
                 showStyleButton={true}
